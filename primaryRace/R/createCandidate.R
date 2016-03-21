@@ -18,8 +18,9 @@
 #' @export
 #' @export
 createCandidate <-function(name, delegatesWon, party){
-    if (party == "Democrats") delegatesNeeded = 2383 - delegatesWon
-    if (party == "Republicans") delegatesNeeded =  1237 - delegatesWon
+    if (party == "Democrat") delegatesNeeded = 2383 - delegatesWon
+    if (party == "Republican") delegatesNeeded =  1237 - delegatesWon
+    if (delegatesNeeded < 0) delegatesNeeded = 0
     candidate <- new("Candidate", name = name, 
                       delegatesWon = delegatesWon,
                       party = party,

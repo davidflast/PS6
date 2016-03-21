@@ -11,3 +11,6 @@ package.skeleton(name="primaryRace")
 current.code <- as.package("primaryRace")
 load_all(current.code)
 document(current.code)
+
+# test crateCandidate
+createCandidate(name="hillary", delegatesWon = 600, party="Democrats")

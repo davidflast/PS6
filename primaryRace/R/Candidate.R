@@ -24,10 +24,29 @@ setClass(Class="Candidate",
          ),
          prototype = prototype(
            name = character(),
-          delegatesWon = numeric(),
+           delegatesWon = numeric(),
            party = character(),
            delegatesNeeded = numeric()
          )
+)
+setValidity("Candidate", function(object){
+  # Checks party names are capitalized and have correct spelling
+  if(!(object@party == "Democrat" | object@party == "Republican")){
+    return("Party name needs to be Democrat or Republican")
+  }
+  # Checks delegates won is a positive number
+  if(object@delegatesWon < 0 ) {
+    return("Delegates won needes to be a positive numeber")
+  }
+  # Cheecks number of democrat delegates won is less than total number of delegates
+  if(object@party == "Democrat" & object@delegatesWon > 4765){
+    return("Democrats have a total of 4,765 delegates. Your input must be lower than this")
+  }
+  # Cheecks number of republican delegates won is less than total number of delegates
+  if(object@party == "Republican" & object@delegatesWon > 2472){
+    return("Republicans have a total of 2,472 delegates. Your input must be lower than this")
+  }
+}
 )
 
 
