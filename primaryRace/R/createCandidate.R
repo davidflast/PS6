@@ -16,7 +16,6 @@
 #' @seealso \code{\link{Candidate}}
 #' @rdname createCandidate
 #' @export
-#' @export
 createCandidate <-function(name, delegatesWon, party){
     if (party == "Democrat") delegatesNeeded = 2383 - delegatesWon
     if (party == "Republican") delegatesNeeded =  1237 - delegatesWon

@@ -29,6 +29,7 @@ setClass(Class="Candidate",
            delegatesNeeded = numeric()
          )
 )
+#' @export
 setValidity("Candidate", function(object){
   # Checks party names are capitalized and have correct spelling
   if(!(object@party == "Democrat" | object@party == "Republican")){
@@ -47,6 +48,12 @@ setValidity("Candidate", function(object){
     return("Republicans have a total of 2,472 delegates. Your input must be lower than this")
   }
 }
+)
+#' @export
+setMethod(f = "show", signature = (object = "Candidate"),
+          definition = function(object){
+            print(object)
+          }
 )
 
 

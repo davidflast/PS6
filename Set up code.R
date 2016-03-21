@@ -13,4 +13,4 @@ load_all(current.code)
 document(current.code)
 
 # test crateCandidate
-createCandidate(name="hillary", delegatesWon = 600, party="Democrats")
+createCandidate(name="hillary", delegatesWon = 2000, party="Republican")
