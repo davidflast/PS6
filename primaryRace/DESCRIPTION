@@ -12,4 +12,5 @@ Suggests:
     devtools
 Collate:
     'Candidate.R'
+    'createCandidate.R'
 RoxygenNote: 5.0.1
