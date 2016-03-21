@@ -1,0 +1,8 @@
+primaryRace-package	primaryRace-package
+AllSquares-class	Candidate
+Candidate-class	Candidate
+createCandidate	createCandidate
+getSquares,AllSquares-method	Candidate
+initialize,AllSquares-method	Candidate
+primaryRace	primaryRace-package
+show,Candidate-method	showCandidate

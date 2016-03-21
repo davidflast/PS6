@@ -1,0 +1,4 @@
+Candidate-class         A squared value object
+createCandidate         Create objects of class candidate
+primaryRace-package     Primary Race
+show,Candidate-method   Show objects of class Candidate

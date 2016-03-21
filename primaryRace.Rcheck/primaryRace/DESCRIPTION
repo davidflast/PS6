@@ -7,11 +7,11 @@ Authors@R: person("David", "Flasterstein", email = "davidflasterstein@wustl.edu"
 Description: Creates a class candidate which then calculates the
     necessary number of delegates to win the primary
 License: BSD
-Suggests:
-    devtools
-Collate:
-    'Candidate.R'
-    'createCandidate.R'
-    'printCandidate.R'
-    'showCandidate.R'
+Suggests: devtools
+Collate: 'Candidate.R' 'createCandidate.R' 'showCandidate.R'
 RoxygenNote: 5.0.1
+NeedsCompilation: no
+Packaged: 2016-03-21 07:08:50 UTC; davidflast
+Author: David Flasterstein [aut, cre]
+Maintainer: David Flasterstein <davidflasterstein@wustl.edu>
+Built: R 3.2.3; ; 2016-03-21 07:08:51 UTC; unix

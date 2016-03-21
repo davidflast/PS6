@@ -1,0 +1,11 @@
+* installing *source* package ‘primaryRace’ ...
+** R
+** preparing package for lazy loading
+Creating a generic function for ‘print’ from package ‘base’ in package ‘primaryRace’
+** help
+Warning: /private/var/folders/wk/6kw49ph576d3490w6hkvb1km0000gn/T/Rtmpc0mho2/Rbuilda1266804d7d7/primaryRace/man/primaryRace-package.Rd:26: All text must be in a section
+Warning: /private/var/folders/wk/6kw49ph576d3490w6hkvb1km0000gn/T/Rtmpc0mho2/Rbuilda1266804d7d7/primaryRace/man/primaryRace-package.Rd:27: All text must be in a section
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded
+* DONE (primaryRace)

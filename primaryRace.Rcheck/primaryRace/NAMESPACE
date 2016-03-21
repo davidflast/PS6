@@ -2,5 +2,4 @@
 
 export(createCandidate)
 exportClasses(Candidate)
-exportMethods(print)
 exportMethods(show)

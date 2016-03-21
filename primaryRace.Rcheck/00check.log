@@ -1,0 +1,93 @@
+* using log directory ‘/Users/davidflast/Documents/PS6/primaryRace.Rcheck’
+* using R version 3.2.3 (2015-12-10)
+* using platform: x86_64-apple-darwin13.4.0 (64-bit)
+* using session charset: UTF-8
+* using options ‘--run-donttest --no-manual --no-build-vignettes --as-cran’
+* checking for file ‘primaryRace/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘primaryRace’ version ‘1.0’
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘primaryRace’ can be installed ... WARNING
+Found the following significant warnings:
+  Warning: /private/var/folders/wk/6kw49ph576d3490w6hkvb1km0000gn/T/Rtmpc0mho2/Rbuilda1266804d7d7/primaryRace/man/primaryRace-package.Rd:26: All text must be in a section
+  Warning: /private/var/folders/wk/6kw49ph576d3490w6hkvb1km0000gn/T/Rtmpc0mho2/Rbuilda1266804d7d7/primaryRace/man/primaryRace-package.Rd:27: All text must be in a section
+See ‘/Users/davidflast/Documents/PS6/primaryRace.Rcheck/00install.out’ for details.
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking DESCRIPTION meta-information ... NOTE
+Malformed Description field: should contain one or more complete sentences.
+Deprecated license: BSD
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking dependencies in R code ... NOTE
+package 'methods' is used but not declared
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... WARNING
+prepare_Rd: primaryRace-package.Rd:26: All text must be in a section
+prepare_Rd: primaryRace-package.Rd:27: All text must be in a section
+* checking Rd metadata ... OK
+* checking Rd line widths ... OK
+* checking Rd cross-references ... WARNING
+Unknown package ‘<pkg>’ in Rd xrefs
+Missing link or links in documentation object 'createCandidate.Rd':
+  ‘Candidate’
+
+See section 'Cross-references' in the 'Writing R Extensions' manual.
+
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... WARNING
+Undocumented arguments in documentation object 'createCandidate'
+  ‘name’ ‘delegatesWon’ ‘party’
+Documented arguments not in \usage in documentation object 'createCandidate':
+  ‘x’ ‘y’
+
+Functions with \usage entries need to have the appropriate \alias
+entries, and all their arguments documented.
+The \usage entries must correspond to syntactically valid R code.
+See chapter ‘Writing R documentation files’ in the ‘Writing R
+Extensions’ manual.
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... WARNING
+Warning: parse error in file 'primaryRace-Ex.R':
+37:11: unexpected symbol
+36: 
+37: ~~ simple examples
+              ^
+* checking examples ... ERROR
+Running examples in ‘primaryRace-Ex.R’ failed
+The error most likely occurred in:
+
+> base::assign(".ptime", proc.time(), pos = "CheckExEnv")
+> ### Name: createCandidate
+> ### Title: Create objects of class candidate
+> ### Aliases: createCandidate
+> 
+> ### ** Examples
+> 
+> 
+> createCandidate(name = "Hillary", delegatesWon = 100, party = "democrat")
+Error in initialize(value, ...) : object 'delegatesNeeded' not found
+Calls: createCandidate -> new -> initialize -> initialize
+Execution halted
+* DONE
+Status: 1 ERROR, 5 WARNINGs, 2 NOTEs

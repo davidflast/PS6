@@ -13,4 +13,6 @@ load_all(current.code)
 document(current.code)
 
 # test crateCandidate
-createCandidate(name="hillary", delegatesWon = 600, party="Democrats")
+y <- createCandidate(name="hillary", delegatesWon = 600, party="Democrat")
+show(y)
+print(y)
