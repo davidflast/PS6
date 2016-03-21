@@ -14,4 +14,5 @@ Collate:
     'createCandidate.R'
     'printCandidate.R'
     'showCandidate.R'
+    'propNeeded.R'
 RoxygenNote: 5.0.1

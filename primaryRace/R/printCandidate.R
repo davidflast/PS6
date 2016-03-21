@@ -2,7 +2,7 @@
 #'
 #' Inputing an object of class Candidate shows the object
 #'
-#' @param object of class Candidate
+#' @param x object of class Candidate
 #'
 #' @return print each individual element of Candidate
 #' @author David Flaserstein

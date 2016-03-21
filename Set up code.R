@@ -14,5 +14,9 @@ document(current.code)
 
 # test crateCandidate
 y <- createCandidate(name="hillary", delegatesWon = 600, party="Democrat")
+# test show
 show(y)
+# test print
 print(y)
+# test propNeed
+propNeeded(y, 2000)
