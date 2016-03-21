@@ -7,7 +7,7 @@
 #'
 #' @return print each individual element of Candidate
 #' @author David Flaserstein
-#' @rdname printCandidate
+#' @rdname propNeeded
 #' @export
 setGeneric("propNeeded",
            function(object="Candidate", remainingDelegates = "numeric") {
