@@ -1,0 +1,15 @@
+Package: primaryRace
+Type: Package
+Title: Primary Race
+Version: 1.0
+Date: 2016-03-20
+Author: David Flasterstein
+Maintainer: davidflasterstein@wustl.edu
+Description: Creates a class candidate which then calculates the
+    necessary number of delegates to win the primary
+License: liscened from flasterpolitics
+Suggests:
+    devtools
+Collate:
+    'Candidate.R'
+RoxygenNote: 5.0.1
