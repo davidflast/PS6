@@ -11,8 +11,12 @@
 setMethod(f = "print",
           signature = "Candidate",
           definition = function (x, ...) {
-            print(paste(x@name, "a", x@party))
-            print(paste("Delegates Won:", x@delegatesWon))
-            print(paste("Delegates Needed:", x@delegatesNeeded))
+            print("Presidential primary contender")
+            print(paste(x@name, ", a ", x@party, ", ", sep=""))
+            print(paste("has won", x@delegatesWon, "delegates "))
+            print(paste("and needs", x@delegatesNeeded, "more to win."))
           }
 )
+?print
+?show
+?paste
