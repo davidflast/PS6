@@ -2,10 +2,7 @@
 % Please edit documentation in R/Candidate.R
 \docType{class}
 \name{Candidate-class}
-\alias{AllSquares-class}
 \alias{Candidate-class}
-\alias{getSquares,AllSquares-method}
-\alias{initialize,AllSquares-method}
 \title{A squared value object}
 \description{
 Object of class \code{Candidate} as created by the \code{Candidate} functions
@@ -13,10 +10,10 @@ Object of class \code{Candidate} as created by the \code{Candidate} functions
 \details{
 An object of the class `Candidate' has the following slots:
 \itemize{
-\item \code{name} The added or subtracted squared values
-\item \code{delegatesWon} The added or subtracted squared values
-\item \code{party} The first input
-\item \code{delegatesNeeded} the second input 
+\item \code{name} Name of the Candidate
+\item \code{delegatesWon} Delegates the Candidate has won so far
+\item \code{party} The political party of the Candidate
+\item \code{delegatesNeeded} How many more delegates the Candidate needs to win
 }
 }
 \author{

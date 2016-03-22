@@ -3,6 +3,7 @@
 export(createCandidate)
 export(propNeeded)
 exportClasses(Candidate)
+exportMethods(initialize)
 exportMethods(print)
 exportMethods(propNeeded)
 exportMethods(show)
