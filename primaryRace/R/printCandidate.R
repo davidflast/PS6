@@ -4,7 +4,7 @@
 #'
 #' @param x object of class Candidate
 #'
-#' @return print each individual element of Candidate
+#' @return A paragraph explaining the the name, party, delegatesWon and DelegatesNeeded
 #' @author David Flaserstein
 #' @rdname printCandidate
 #' @export
