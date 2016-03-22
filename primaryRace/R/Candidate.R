@@ -1,3 +1,4 @@
+
 #' A squared value object 
 #' 
 #' Object of class \code{Candidate} as created by the \code{Candidate} functions
@@ -5,14 +6,13 @@
 #' 
 #' An object of the class `Candidate' has the following slots:
 #' \itemize{
-#' \item \code{name} The added or subtracted squared values
-#' \item \code{delegatesWon} The added or subtracted squared values
-#' \item \code{party} The first input
-#' \item \code{delegatesNeeded} the second input 
+#' \item \code{name} Name of the Candidate
+#' \item \code{delegatesWon} Delegates the Candidate has won so far
+#' \item \code{party} The political party of the Candidate
+#' \item \code{delegatesNeeded} How many more delegates the Candidate needs to win
 #' }
 #'
 #' @author David P. Flasterstein: \email{davidflasterstein@@wustl.edu}
-#' @aliases AllSquares-class initialize,AllSquares-method getSquares,AllSquares-method 
 #' @rdname Candidate
 #' @export
 setClass(Class="Candidate",
@@ -48,6 +48,28 @@ setValidity("Candidate", function(object){
   }
 }
 )
+# Calculates the number of delegates needed
+needDelegates <- function(p, dw){
+  delegatesNeeded <- NA
+  if (p == "Democrat") {
+    delegatesNeeded = max(0, 2383 - dw)
+  }
+  if (p == "Republican") {
+    delegatesNeeded =  max(0, 1237 - dw)
+  }
+  return(delegatesNeeded)
+}
+#' @export
+setMethod("initialize", "Candidate", 
+          function(.Object,name, delegatesWon, party, ...){
+            .Object@name = name
+            .Object@delegatesWon = delegatesWon
+            .Object@party = party
+            .Object@delegatesNeeded = needDelegates(party, delegatesWon)
+            return(.Object)
+          }
+) 
+
 
 
 

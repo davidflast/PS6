@@ -12,16 +12,12 @@
 #' @author David Flaserstein
 #' @examples
 #' 
-#' createCandidate(name = "Hillary", delegatesWon = 100, party = "democrat")
+#' createCandidate(name = "Hillary", delegatesWon = 100, party = "Democrat")
 #' @seealso \code{\link{Candidate}}
 #' @rdname createCandidate
 #' @export
 createCandidate <- function(name, delegatesWon, party){
-    if (party == "Democrat") delegatesNeeded = max(0, 2383 - delegatesWon)
-    if (party == "Republican") delegatesNeeded =  max(0, 1237 - delegatesWon)
-    candidate <- new("Candidate", name = name, 
-                      delegatesWon = delegatesWon,
-                      party = party,
-                      delegatesNeeded = delegatesNeeded)
+    candidate <- new("Candidate", name, 
+                     delegatesWon, party)
     return(candidate)
 } 
